@@ -5,8 +5,10 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Schedule {
-    @Scheduled(cron = "0 0 18 ? 3-10 *")
-    public void schedule(){
+    @Scheduled(cron = "* */5 * * 1-5 *")
+    public void Weekdays(){
         System.out.println("Hello World");
     }
+
+  
 }
