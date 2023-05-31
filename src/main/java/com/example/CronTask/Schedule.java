@@ -9,6 +9,10 @@ public class Schedule {
     public void Weekdays(){
         System.out.println("Hello World");
     }
+    @Scheduled(cron = "*/15 * * * 6-7")
+    public void Weekends(){
+        System.out.println("Hello World 2");
+    }
 
 
 }
